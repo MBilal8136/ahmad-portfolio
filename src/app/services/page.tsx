@@ -227,7 +227,7 @@ export default function Services() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-brand-green"
+                  className="w-full sm:w-auto border-white text-white"
                 >
                   Ask Questions
                 </Button>

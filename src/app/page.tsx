@@ -641,7 +641,7 @@ export default function Home() {
                 >
                   <span>Book Free Consultation</span>
                   <ArrowRight
-                    className="ml-2 group-hover:translate-x-1 transition-transform"
+                    className="ml-2 group-hover:translate-x-1 hover transition-transform"
                     size={20}
                   />
                 </Button>
