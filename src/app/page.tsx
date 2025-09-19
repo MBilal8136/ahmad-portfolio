@@ -650,7 +650,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-brand-green shadow-2xl"
+                  className="w-full sm:w-auto border-2 border-white text-white hover:text-green shadow-2xl"
                 >
                   Get in Touch
                 </Button>
