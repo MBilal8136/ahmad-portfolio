@@ -52,11 +52,9 @@ export default function Modal({
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
           >
             {/* Header */}
-            {(title || onClose) && (
+            {title && (
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                {title && (
-                  <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-                )}
+                <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
                 <button
                   onClick={onClose}
                   className="p-2 text-gray-400 hover:text-gray-600 transition-colors"
