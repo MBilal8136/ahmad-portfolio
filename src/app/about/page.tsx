@@ -251,11 +251,13 @@ export default function About() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/images/fiza-profile.jpeg"
+                  src="/images/image.jpeg"
                   alt="Fiza - Professional Nutritionist"
                   fill
-                  className="object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover object-fit group-hover:scale-110 transition-transform duration-500"
+                  style={{ objectPosition: "center -110px", objectFit: "cover" }}
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 
                 {/* Floating elements around image */}
