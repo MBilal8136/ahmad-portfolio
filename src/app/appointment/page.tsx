@@ -198,7 +198,7 @@ export default function Appointment() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-br from-green-50 via-white to-orange-50 overflow-hidden">
+      <section className="relative pt-16 sm:pt-20 pb-12 sm:pb-16 bg-gradient-to-br from-green-50 via-white to-orange-50 overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <motion.div
@@ -315,9 +315,9 @@ export default function Appointment() {
       </section>
 
       {/* Appointment Form */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Form */}
             <motion.div
               className="lg:col-span-2"
@@ -325,7 +325,7 @@ export default function Appointment() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <Card className="p-8 relative overflow-hidden group">
+              <Card className="p-4 sm:p-6 md:p-8 relative overflow-hidden group">
                 {/* Shine Effect */}
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"

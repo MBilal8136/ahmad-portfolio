@@ -106,7 +106,7 @@ export default function Contact() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-green-50 to-orange-50">
+      <section className="pt-16 sm:pt-20 pb-12 sm:pb-16 bg-gradient-to-br from-green-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center"
@@ -114,10 +114,10 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Get in <span className="text-brand-green">Touch</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               Have questions about nutrition or want to book a consultation?
               We'd love to hear from you. Reach out and let's start your health
               journey together.
@@ -127,9 +127,9 @@ export default function Contact() {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -137,12 +137,15 @@ export default function Contact() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Card className="p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              <Card className="p-4 sm:p-6 md:p-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
                   Send us a Message
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-4 sm:space-y-6"
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     <Input
                       label="Full Name"
                       name="name"

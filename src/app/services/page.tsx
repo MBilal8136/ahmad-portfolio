@@ -16,7 +16,7 @@ export default function Services() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-green-50 to-orange-50">
+      <section className="pt-16 sm:pt-20 pb-12 sm:pb-16 bg-gradient-to-br from-green-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center"
@@ -24,10 +24,10 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Our <span className="text-brand-green">Diet Plans</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6 sm:mb-8">
               Choose from our comprehensive range of nutrition programs designed
               to help you achieve your specific health goals. Each plan is
               carefully crafted by our certified nutritionist.

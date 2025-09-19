@@ -146,7 +146,7 @@ export default function About() {
               </motion.div>
 
               <motion.h1
-                className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -164,7 +164,7 @@ export default function About() {
               </motion.h1>
 
               <motion.p
-                className="text-xl text-gray-600 mb-6"
+                className="text-base sm:text-lg md:text-xl text-gray-600 mb-4 sm:mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -175,7 +175,7 @@ export default function About() {
               </motion.p>
 
               <motion.p
-                className="text-lg text-gray-600 mb-8"
+                className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -246,7 +246,7 @@ export default function About() {
               className="relative"
             >
               <motion.div
-                className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl group"
+                className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl group"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
@@ -255,7 +255,10 @@ export default function About() {
                   alt="Fiza - Professional Nutritionist"
                   fill
                   className="object-cover object-fit group-hover:scale-110 transition-transform duration-500"
-                  style={{ objectPosition: "center -110px", objectFit: "cover" }}
+                  style={{
+                    objectPosition: "center -110px",
+                    objectFit: "cover",
+                  }}
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
@@ -293,7 +296,7 @@ export default function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 bg-white relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-10 left-10 w-32 h-32 bg-brand-green rounded-full blur-3xl"></div>
@@ -302,21 +305,21 @@ export default function About() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
               My <span className="text-brand-green">Impact</span>
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
               Numbers that reflect my commitment to helping people achieve their
               health goals.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
